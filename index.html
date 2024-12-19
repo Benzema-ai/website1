@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStorm-Inspired Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            transition: transform 0.3s;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Navbar -->
+    <header class="bg-gray-800 p-4 fixed w-full top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold text-green-400">YourLogo</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#features" class="hover:text-green-400">Features</a></li>
+                    <li><a href="#pricing" class="hover:text-green-400">Pricing</a></li>
+                    <li><a href="#about" class="hover:text-green-400">About</a></li>
+                    <li><a href="#contact" class="hover:text-green-400">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="bg-green-400 text-gray-900 px-4 py-2 rounded-lg">Get Started</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative gradient-bg pt-24 pb-32">
+        <div class="container mx-auto text-center">
+            <h1 class="text-6xl font-extrabold leading-tight mb-6">Develop Smarter, Faster</h1>
+            <p class="text-xl text-gray-200 mb-8">Supercharge your development process with powerful tools and intuitive workflows.</p>
+            <button class="bg-green-400 text-gray-900 px-8 py-4 rounded-lg text-lg">Start Free Trial</button>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-900"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="bg-gray-800 py-16">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Why Choose Us?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-700 p-6 rounded-lg text-center card">
+                    <img src="https://via.placeholder.com/100" alt="Feature 1" class="mx-auto mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Intelligent Code Assistance</h3>
+                    <p class="text-gray-400">Write code faster with AI-powered suggestions and error detection.</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg text-center card">
+                    <img src="https://via.placeholder.com/100" alt="Feature 2" class="mx-auto mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Integrated Debugging</h3>
+                    <p class="text-gray-400">Debug your applications seamlessly with built-in tools.</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg text-center card">
+                    <img src="https://via.placeholder.com/100" alt="Feature 3" class="mx-auto mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Customizable Themes</h3>
+                    <p class="text-gray-400">Tailor your IDE experience to match your workflow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="bg-gray-900 py-16">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Pricing Plans</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-8 rounded-lg text-center card">
+                    <h3 class="text-2xl font-semibold mb-4">Basic Plan</h3>
+                    <p class="text-gray-400 mb-6">Perfect for individuals just starting out.</p>
+                    <p class="text-4xl font-bold mb-6">$9.99</p>
+                    <button class="bg-green-400 text-gray-900 px-6 py-3 rounded-lg">Choose Plan</button>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg text-center card">
+                    <h3 class="text-2xl font-semibold mb-4">Pro Plan</h3>
+                    <p class="text-gray-400 mb-6">Great for small teams and businesses.</p>
+                    <p class="text-4xl font-bold mb-6">$29.99</p>
+                    <button class="bg-green-400 text-gray-900 px-6 py-3 rounded-lg">Choose Plan</button>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg text-center card">
+                    <h3 class="text-2xl font-semibold mb-4">Enterprise Plan</h3>
+                    <p class="text-gray-400 mb-6">Advanced features for large organizations.</p>
+                    <p class="text-4xl font-bold mb-6">$99.99</p>
+                    <button class="bg-green-400 text-gray-900 px-6 py-3 rounded-lg">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-10">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-400 mb-4">&copy; 2024 YourBrand. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
+                <a href="#" class="text-gray-400 hover:text-white">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
